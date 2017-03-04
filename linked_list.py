@@ -39,13 +39,16 @@ class UnorderedList:
 
         return count
 
-
     """ print the linked list """
     def prlist(self):
+        lst = []
         current = self.head
         while current != None:
-            print current.getData()
+            lst.append(current.data)
             current = current.getNext()
+
+        print lst
+
 
     def search(self, item):
         current = self.head
@@ -89,3 +92,5 @@ print mylist.size()
 print mylist.search(93)
 print mylist.search(91010)
 print mylist.prlist()
+
+
